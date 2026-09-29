@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Gallery | Evergreen Public School
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .gallery-page {
+
+            padding:
+                150px 7% 100px;
+
+            max-width:
+                1250px;
+
+            margin: auto;
+
+        }
+
+
+        .gallery-page-header {
+
+            max-width: 750px;
+
+            margin-bottom: 60px;
+
+        }
+
+
+        .gallery-page-header h1 {
+
+            font-family:
+                "Playfair Display", serif;
+
+            font-size:
+                clamp(50px,7vw,90px);
+
+            line-height: .95;
+
+            margin-top: 15px;
+
+        }
+
+
+        .gallery-page-header p {
+
+            margin-top: 25px;
+
+            color: var(--text);
+
+            line-height: 1.8;
+
+            max-width: 600px;
+
+        }
+
+
+        .gallery-page-grid {
+
+            columns:
+                3 280px;
+
+            column-gap: 14px;
+
+        }
+
+
+        .gallery-page-item {
+
+            position: relative;
+
+            margin-bottom: 14px;
+
+            overflow: hidden;
+
+            break-inside: avoid;
+
+            cursor: pointer;
+
+            background: #ddd;
+
+        }
+
+
+        .gallery-page-item img {
+
+            width: 100%;
+
+            display: block;
+
+            transition: .6s ease;
+
+        }
+
+
+        .gallery-page-item:hover img {
+
+            transform: scale(1.05);
+
+        }
+
+
+        .gallery-page-item span {
+
+            position: absolute;
+
+            left: 15px;
+
+            bottom: 15px;
+
+            background:
+                rgba(255,255,255,.94);
+
+            padding:
+                8px 12px;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+        }
+
+
+        .back-btn {
+
+            display: inline-flex;
+
+            margin-top: 40px;
+
+            padding:
+                13px 18px;
+
+            border:
+                1px solid var(--green);
+
+            color: var(--green);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition: .3s;
+
+        }
+
+
+        .back-btn:hover {
+
+            background:
+                var(--green);
+
+            color: white;
+
+        }
+
+
+        /* IMAGE VIEWER */
+
+        .lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                rgba(10,20,17,.94);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 25px;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            transition: .35s ease;
+
+            z-index: 5000;
+
+        }
+
+
+        .lightbox.active {
+
+            opacity: 1;
+
+            pointer-events: auto;
+
+        }
+
+
+        .lightbox img {
+
+            max-width: 95%;
+
+            max-height: 90vh;
+
+            width: auto;
+
+            object-fit: contain;
+
+        }
+
+
+        .close-lightbox {
+
+            position: absolute;
+
+            top: 25px;
+
+            right: 25px;
+
+            width: 45px;
+
+            height: 45px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(255,255,255,.4);
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+        }
+
+
+        @media(max-width:600px) {
+
+            .gallery-page {
+
+                padding:
+                    120px 20px 80px;
+
+            }
+
+            .gallery-page-grid {
+
+                columns: 1;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-circle">
+
+            <img
+                src="images/school-logo.png"
+                alt="School Logo">
+
+        </div>
+
+        <div class="logo-text">
+
+            <strong>
+                Evergreen
+            </strong>
+
+            <span>
+                Public School
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <nav class="navigation">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="facilities.html">
+            Facilities
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="gallery-page">
+
+
+    <div class="gallery-page-header">
+
+        <span class="section-label">
+            SCHOOL GALLERY
+        </span>
+
+
+        <h1>
+
+            Life at
+
+            <em>
+                Evergreen.
+            </em>
+
+        </h1>
+
+
+        <p>
+
+            Explore memorable moments from our classrooms,
+            activities, celebrations, competitions and
+            campus life.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="gallery-page-grid">
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-1.jpg"
+                alt="School Event">
+
+            <span>
+                School Events
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-2.jpg"
+                alt="Students">
+
+            <span>
+                Student Life
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-3.jpg"
+                alt="Activities">
+
+            <span>
+                Activities
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-4.jpg"
+                alt="Campus">
+
+            <span>
+                Campus
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-5.jpg"
+                alt="Annual Function">
+
+            <span>
+                Annual Function
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-6.jpg"
+                alt="Learning">
+
+            <span>
+                Learning
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-7.jpg"
+                alt="Sports">
+
+            <span>
+                Sports
+            </span>
+
+        </div>
+
+
+        <div class="gallery-page-item">
+
+            <img
+                src="images/gallery-8.jpg"
+                alt="Campus Life">
+
+            <span>
+                Campus Life
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <a
+        href="index.html"
+        class="back-btn">
+
+        ← Back to Home
+
+    </a>
+
+
+</main>
+
+
+
+<!-- LIGHTBOX -->
+
+<div
+    class="lightbox"
+    id="lightbox">
+
+
+    <button
+        class="close-lightbox"
+        id="closeLightbox">
+
+        ×
+
+    </button>
+
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Gallery Preview">
+
+
+</div>
+
+
+
+<script>
+
+    const galleryItems =
+        document.querySelectorAll(
+            ".gallery-page-item"
+        );
+
+
+    const lightbox =
+        document.getElementById(
+            "lightbox"
+        );
+
+
+    const lightboxImage =
+        document.getElementById(
+            "lightboxImage"
+        );
+
+
+    const closeLightbox =
+        document.getElementById(
+            "closeLightbox"
+        );
+
+
+    galleryItems.forEach((item) => {
+
+        item.addEventListener("click", () => {
+
+            const image =
+                item.querySelector("img");
+
+            lightboxImage.src =
+                image.src;
+
+            lightbox.classList.add(
+                "active"
+            );
+
+        });
+
+    });
+
+
+    closeLightbox.addEventListener(
+        "click",
+        () => {
+
+            lightbox.classList.remove(
+                "active"
+            );
+
+        }
+    );
+
+
+    lightbox.addEventListener(
+        "click",
+        (event) => {
+
+            if (
+                event.target === lightbox
+            ) {
+
+                lightbox.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>
