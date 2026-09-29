@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Facilities | Evergreen Public School
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .facilities-page {
+
+            padding:
+                150px 7% 110px;
+
+            max-width:
+                1250px;
+
+            margin: auto;
+
+        }
+
+
+        .facilities-header {
+
+            max-width: 780px;
+
+            margin-bottom: 70px;
+
+        }
+
+
+        .facilities-header h1 {
+
+            font-family:
+                "Playfair Display", serif;
+
+            font-size:
+                clamp(50px,7vw,90px);
+
+            line-height: .95;
+
+            margin-top: 15px;
+
+        }
+
+
+        .facilities-header p {
+
+            margin-top: 25px;
+
+            max-width: 650px;
+
+            color: var(--text);
+
+            line-height: 1.8;
+
+        }
+
+
+        .facility-page-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 18px;
+
+        }
+
+
+        .facility-page-card {
+
+            position: relative;
+
+            min-height: 430px;
+
+            overflow: hidden;
+
+            background: #ddd;
+
+        }
+
+
+        .facility-page-card img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform .8s ease;
+
+        }
+
+
+        .facility-page-card:hover img {
+
+            transform:
+                scale(1.06);
+
+        }
+
+
+        .facility-page-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            padding: 35px;
+
+            background:
+                linear-gradient(
+                    transparent 30%,
+                    rgba(10,30,24,.85)
+                );
+
+            color: white;
+
+        }
+
+
+        .facility-page-overlay span {
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            color: #d8bb7b;
+
+        }
+
+
+        .facility-page-overlay h2 {
+
+            margin-top: 8px;
+
+            font-family:
+                "Playfair Display", serif;
+
+            font-size: 35px;
+
+        }
+
+
+        .facility-page-overlay p {
+
+            max-width: 470px;
+
+            margin-top: 10px;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+
+            color:
+                rgba(255,255,255,.75);
+
+        }
+
+
+        .facility-info {
+
+            margin-top: 70px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            border-top:
+                1px solid var(--line);
+
+            border-bottom:
+                1px solid var(--line);
+
+        }
+
+
+        .facility-info-box {
+
+            padding: 35px 25px;
+
+            border-right:
+                1px solid var(--line);
+
+        }
+
+
+        .facility-info-box:last-child {
+
+            border-right: none;
+
+        }
+
+
+        .facility-info-box strong {
+
+            display: block;
+
+            font-family:
+                "Playfair Display", serif;
+
+            font-size: 25px;
+
+            color: var(--green);
+
+        }
+
+
+        .facility-info-box p {
+
+            margin-top: 10px;
+
+            color: var(--text);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .facilities-back {
+
+            display: inline-flex;
+
+            margin-top: 45px;
+
+            padding:
+                13px 18px;
+
+            border:
+                1px solid var(--green);
+
+            color: var(--green);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition: .3s ease;
+
+        }
+
+
+        .facilities-back:hover {
+
+            background:
+                var(--green);
+
+            color: white;
+
+        }
+
+
+        @media(max-width:700px) {
+
+            .facilities-page {
+
+                padding:
+                    120px 20px 80px;
+
+            }
+
+
+            .facility-page-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .facility-page-card {
+
+                min-height: 380px;
+
+            }
+
+
+            .facility-info {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .facility-info-box {
+
+                border-right: none;
+
+                border-bottom:
+                    1px solid var(--line);
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-circle">
+
+            <img
+                src="images/school-logo.png"
+                alt="School Logo">
+
+        </div>
+
+        <div class="logo-text">
+
+            <strong>
+                Evergreen
+            </strong>
+
+            <span>
+                Public School
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <nav class="navigation">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="facilities.html">
+            Facilities
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="facilities-page">
+
+
+    <div class="facilities-header">
+
+        <span class="section-label">
+            OUR FACILITIES
+        </span>
+
+
+        <h1>
+
+            Designed for
+
+            <em>
+                better learning.
+            </em>
+
+        </h1>
+
+
+        <p>
+
+            From technology-enabled classrooms to sports,
+            laboratories and creative spaces, Evergreen
+            Public School provides students with an
+            environment designed for learning and growth.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- FACILITY CARDS -->
+
+    <div class="facility-page-grid">
+
+
+        <article class="facility-page-card">
+
+            <img
+                src="images/classroom.jpg"
+                alt="Smart Classroom">
+
+
+            <div class="facility-page-overlay">
+
+                <span>
+                    01 / ACADEMICS
+                </span>
+
+                <h2>
+                    Smart Classrooms
+                </h2>
+
+                <p>
+
+                    Modern classrooms designed to make
+                    lessons interactive, visual and engaging.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="facility-page-card">
+
+            <img
+                src="images/laboratory.jpg"
+                alt="Science Laboratory">
+
+
+            <div class="facility-page-overlay">
+
+                <span>
+                    02 / SCIENCE
+                </span>
+
+                <h2>
+                    Science Laboratories
+                </h2>
+
+                <p>
+
+                    Practical learning spaces where students
+                    can observe, experiment and understand.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="facility-page-card">
+
+            <img
+                src="images/library.jpg"
+                alt="School Library">
+
+
+            <div class="facility-page-overlay">
+
+                <span>
+                    03 / KNOWLEDGE
+                </span>
+
+                <h2>
+                    School Library
+                </h2>
+
+                <p>
+
+                    A calm environment that encourages
+                    reading, research and independent study.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="facility-page-card">
+
+            <img
+                src="images/computer-lab.jpg"
+                alt="Computer Laboratory">
+
+
+            <div class="facility-page-overlay">
+
+                <span>
+                    04 / TECHNOLOGY
+                </span>
+
+                <h2>
+                    Computer Lab
+                </h2>
+
+                <p>
+
+                    Technology-focused learning that helps
+                    students build digital skills.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="facility-page-card">
+
+            <img
+                src="images/playground.jpg"
+                alt="School Playground">
+
+
+            <div class="facility-page-overlay">
+
+                <span>
+                    05 / SPORTS
+                </span>
+
+                <h2>
+                    Sports & Playground
+                </h2>
+
+                <p>
+
+                    Spaces that encourage fitness,
+                    teamwork, discipline and confidence.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="facility-page-card">
+
+            <img
+                src="images/campus.jpg"
+                alt="School Campus">
+
+
+            <div class="facility-page-overlay">
+
+                <span>
+                    06 / CAMPUS
+                </span>
+
+                <h2>
+                    School Campus
+                </h2>
+
+                <p>
+
+                    A welcoming campus where students
+                    can learn, interact and grow together.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+
+    <!-- INFORMATION -->
+
+    <div class="facility-info">
+
+
+        <div class="facility-info-box">
+
+            <strong>
+                Safe Environment
+            </strong>
+
+            <p>
+
+                A supportive school environment focused
+                on student wellbeing and responsible learning.
+
+            </p>
+
+        </div>
+
+
+        <div class="facility-info-box">
+
+            <strong>
+                Modern Learning
+            </strong>
+
+            <p>
+
+                Learning spaces designed to support
+                contemporary teaching methods.
+
+            </p>
+
+        </div>
+
+
+        <div class="facility-info-box">
+
+            <strong>
+                Student Growth
+            </strong>
+
+            <p>
+
+                Academic, creative, physical and
+                social development are encouraged.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <a
+        href="index.html"
+        class="facilities-back">
+
+        ← Back to Home
+
+    </a>
+
+
+</main>
+
+
+</body>
+
+</html>
