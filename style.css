@@ -2089,7 +2089,7 @@ section {
 .stats-section,
 .contact-section {
     background: #006B2D !important;
-    color: #006B2D !important;
+    color: #FFFFFF !important;
 }
 
 /* Statistics text */
@@ -2097,7 +2097,7 @@ section {
 .stats-section h3,
 .stats-section p,
 .stats-section span {
-    color:#006B2D !important;
+    color:#FFFFFF !important;
 }
 
 /* Contact section text */
@@ -2106,7 +2106,7 @@ section {
 .contact-section h3,
 .contact-section p,
 .contact-section span {
-    color: #006B2D !important;
+    color:#F4D58D !important;
 }
 
 /* Gold/cream highlight text */
@@ -2117,6 +2117,6 @@ section {
 /* Contact buttons */
 .contact-section a,
 .contact-section button {
-    color: #006B2D !important;
+    color:#FFFFFF !important;
     border-color: rgba(255,255,255,0.35);
 } 
