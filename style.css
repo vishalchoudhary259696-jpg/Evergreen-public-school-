@@ -2063,25 +2063,6 @@ footer {
         height: 54px;
 
     }
-
-/* ===== VERY LIGHT GREEN WEBSITE BACKGROUND ===== */
-
-html,
-body {
-    background-color: #F3FBEA !important;
-}
-
-/* Remove background pattern/boxes from the main page */
-body {
-    background-image: none !important;
-}
-
-/* Let the light green background show through sections */
-main,
-section {
-    background-color: transparent !important;
-    background-image: none !important;
-}
   /* ==============================
    DARK GREEN SPECIAL SECTIONS
    ============================== */
@@ -2120,3 +2101,5 @@ section {
     color:#FFFFFF !important;
     border-color: rgba(255,255,255,0.35);
 } 
+background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);
