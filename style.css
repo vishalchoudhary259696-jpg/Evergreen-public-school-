@@ -2070,5 +2070,22 @@ footer {
 
     }
 
+/* ===== VERY LIGHT GREEN WEBSITE BACKGROUND ===== */
 
+html,
+body {
+    background-color: #F3FBEA !important;
+}
+
+/* Remove background pattern/boxes from the main page */
+body {
+    background-image: none !important;
+}
+
+/* Let the light green background show through sections */
+main,
+section {
+    background-color: transparent !important;
+    background-image: none !important;
+}
    
