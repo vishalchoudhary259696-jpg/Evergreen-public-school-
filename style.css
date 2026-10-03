@@ -5,27 +5,16 @@
 
 
 /* ================= VARIABLES ================= */
-
 :root {
+    --green: #008F3C;
+    --dark-green: #006B2D;
+    --light-green: #F3FBEA;
+    --cream: #F8FCEB;
+    --white: #FFFFFF;
+    --text: #17221A;
+    }
 
-    --green: #173d32;
-    --green-light: #285c4d;
 
-    --cream: #f7f5ef;
-    --paper: #fffdf8;
-
-    --gold: #c99b48;
-
-    --dark: #17201d;
-    --text: #59615d;
-
-    --line: #d9ddd7;
-
-    --white: #ffffff;
-
-    --max-width: 1180px;
-
-}
 
 
 /* ================= RESET ================= */
