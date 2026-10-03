@@ -2082,4 +2082,41 @@ section {
     background-color: transparent !important;
     background-image: none !important;
 }
-   
+  /* ==============================
+   DARK GREEN SPECIAL SECTIONS
+   ============================== */
+
+.stats-section,
+.contact-section {
+    background: #006B2D !important;
+    color: #006B2D !important;
+}
+
+/* Statistics text */
+.stats-section h2,
+.stats-section h3,
+.stats-section p,
+.stats-section span {
+    color:#006B2D !important;
+}
+
+/* Contact section text */
+.contact-section h1,
+.contact-section h2,
+.contact-section h3,
+.contact-section p,
+.contact-section span {
+    color: #006B2D !important;
+}
+
+/* Gold/cream highlight text */
+.contact-section .highlight {
+    color:#006B2D  !important;
+}
+
+/* Contact buttons */
+.contact-section a,
+.contact-section button {
+    color: #006B2D !important;
+    border-color: rgba(255,255,255,0.35);
+} 
