@@ -48,14 +48,10 @@ html {
 
 
 body {
-
-    font-family: "DM Sans", sans-serif;
-
-    background: var(--cream);
-
-    color: var(--dark);
-
-    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-green);
+    color: var(--text);
 
 }
 
